@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Friend Finder</title>
+    <style>
+        .container {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container shadow-lg p-4 mb-5 mt-4">
+        <h2 class="text-primary">Survey Questions</h2>
+        <hr>
+        <h4><strong>About You</strong></h4>
+        <br>
+        <h5>Name (Required)</h5>
+        <input type="text" id="name" class="form-control" required>
+        <h5 class="mt-2">Link to Photo Image (Required)</h5>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+
+        <h4><strong>Question One</strong></h4>
+        <h5>Often you wish you could nap, especially right now.</h5>
+        <select class="chosen-select" id="q1">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+        <br>
+        <h4><strong>Question Two</strong></h4>
+        <h5>Sometimes you find yourself amazed by little things.</h5>
+        <select class="chosen-select" id="q2">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+        <br>
+        <h4><strong>Question Three</strong></h4>
+        <h5>Small spaces make your comfortable.</h5>
+        <select class="chosen-select" id="q3">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4><strong>Question Four</strong></h4>
+        <h5>Warm places are really nice.</h5>
+        <select class="chosen-select" id="q4">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4><strong>Question Five</strong></h4>
+        <h5>Sometimes you like being around others, sometimes you need your space.</h5>
+        <select class="chosen-select" id="q5">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4><strong>Question Six</strong></h4>
+        <h5>It takes a while before you are comforatble around others.</h5>
+        <select class="chosen-select" id="q6">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4><strong>Question Seven</strong></h4>
+        <h5>Sleeping is everything.</h5>
+        <select class="chosen-select" id="q7">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4><strong>Question Eight</strong></h4>
+        <h5>Stretches and constantly being clean is necessary.</h5>
+        <select class="chosen-select" id="q8">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4><strong>Question Nine</strong></h4>
+        <h5>You are picky about who you hangout with.</h5>
+        <select class="chosen-select" id="q9">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4><strong>Question Ten</strong></h4>
+        <h5>Life can be really fun.</h5>
+        <select class="chosen-select" id="q10">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+
+        <button id="submit" type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#modal">
+            <i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+        </button>
+    </div>
+
+    <!--modal-->
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="photo" src="" height="300px" width="300px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type='text/javascript'>
+        //on click function
+        $("#submit").on("click", function (event) {
+            //stops normal submit functioning
+            event.preventDefault();
+            //user input
+            var userInput = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            }
+            console.log(userInput.scores);
+            let currentURL = window.location.origin;
+            $.post(currentURL + '/api/friends', userInput, function (data) {
+                console.log(data);
+                //clearing out the forms
+                $('#name').val("");
+                $('#photo').val("");
+            });
+            //ajax
+            $.ajax({ url: currentURL + '/api/friends', method: "GET" })
+                .done(function (friendsData) {
+                    //get data
+                    let theScores = friendsData.slice(-1).pop().scores.map(Number);
+                    let totalArr = [];
+                    let friendsArr = friendsData.slice(0, -1);
+                    for (let i = 0; i < friendsArr.length; i++) {
+                        let friendsArrScores = friendsArr[i].scores.map(Number);
+                        let totalDiff = 0;
+                        for (let i = 0; i < theScores.length; i++) {
+                            //total diff
+                            totalDiff += Math.abs(theScores[i] - friendsArrScores[i]);
+                        }
+                        totalArr.push(totalDiff);
+                    }
+                    console.log(totalArr);
+                    indexBF = totalArr.indexOf(Math.min.apply(null, totalArr));
+                    console.log(indexBF);
+                    matchedFriendName = friendsArr[indexBF].name;
+                    matchedFriendPhoto = friendsArr[indexBF].photo;
+                    console.log(matchedFriendName);
+                    $('.modal-title').html("<h1>" + matchedFriendName + "</h1>")
+                    $("img").attr("src", matchedFriendPhoto);
+                })
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
