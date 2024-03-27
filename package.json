@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/dwlam8790/friendFinder#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.19.2"
   }
 }
